@@ -10,7 +10,7 @@ module.exports = {
 		['meta', { name: 'msapplication-TileImage', content: '/images/photo' }],
 		['meta', { name: 'msapplication-TileColor', content: '#000000' }]
 	],
-  base: '/',
+  base: '/xiuyuan66.github.io/',
 	markdown: {
 		lineNumbers: false
   },
