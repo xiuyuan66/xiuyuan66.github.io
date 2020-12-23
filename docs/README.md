@@ -1,5 +1,5 @@
 ---
 home: true
-heroImage: /images/cover.gif
+heroImage: /images/bg.gif
 actionText: Get Started →
 actionLink: '/web/'
