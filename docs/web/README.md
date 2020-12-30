@@ -1,4 +1,8 @@
 
+---
+home: false
+footer: Copyright © xiuyuan66
+---
 # 任重而道远
 
 
