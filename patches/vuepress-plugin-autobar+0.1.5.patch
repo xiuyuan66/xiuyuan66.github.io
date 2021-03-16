@@ -1,4 +1,5 @@
 diff --git a/node_modules/vuepress-plugin-autobar/lib/index.js b/node_modules/vuepress-plugin-autobar/lib/index.js
+<<<<<<< HEAD
 index 437d215..9dcff4f 100644
 --- a/node_modules/vuepress-plugin-autobar/lib/index.js
 +++ b/node_modules/vuepress-plugin-autobar/lib/index.js
@@ -19,3 +20,41 @@ index 437d215..9dcff4f 100644
        return {nav, sidebar};
      }
    }
+=======
+index 437d215..d79ed9e 100644
+--- a/node_modules/vuepress-plugin-autobar/lib/index.js
++++ b/node_modules/vuepress-plugin-autobar/lib/index.js
+@@ -110,7 +110,7 @@ function side(
+     fileLinks.shift();
+     if (setHomepage === 'toGroup') fileLinks[0].children.unshift("");
+   }
+-
++  console.log(fileLinks)
+   // sort file and folder by name
+   fileLinks.sort((a, b) => {
+     let aName = typeof a === "string" ? a : a.title;
+@@ -219,8 +219,10 @@ function multiSide(
+ 
+   nav.forEach(navItem => {
+     if (navItem.link) {
++      console.log('navItem.link',navItem.link)
+       sideBar[navItem.link] = side(join(rootDir, navItem.link), options);
+     } else {
++      console.log(navItem.link)
+       Object.assign(sideBar, multiSide(rootDir, navItem.items, options), currentLevel + 1);
+     }
+   });
+diff --git a/node_modules/vuepress-plugin-autobar/lib/index.test.js b/node_modules/vuepress-plugin-autobar/lib/index.test.js
+index a86c1ee..5403995 100644
+--- a/node_modules/vuepress-plugin-autobar/lib/index.test.js
++++ b/node_modules/vuepress-plugin-autobar/lib/index.test.js
+@@ -16,7 +16,7 @@ describe("autoBar", () => {
+   });
+ 
+   it("should create config without adding readme to first group", async () => {
+-    const config = await configOf("standard", {setHomepage: 'top'}).ready();
++    const config = await configOf("standard", {setHomepage: 'hide'}).ready();
+     expect(config).toEqual(expected("standard-no-readme-move"));
+   });
+ 
+>>>>>>> 4f7c31e12c653ef92ce5757c9f206e049605372c
