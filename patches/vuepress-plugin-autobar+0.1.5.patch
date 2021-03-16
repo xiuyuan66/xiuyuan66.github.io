@@ -1,0 +1,21 @@
+diff --git a/node_modules/vuepress-plugin-autobar/lib/index.js b/node_modules/vuepress-plugin-autobar/lib/index.js
+index 437d215..9dcff4f 100644
+--- a/node_modules/vuepress-plugin-autobar/lib/index.js
++++ b/node_modules/vuepress-plugin-autobar/lib/index.js
+@@ -295,7 +295,7 @@ function translitePinyin(navArr) {
+     }
+   })
+ }
+-
++console.log(8888888)
+ module.exports = (options, ctx) => {
+   return {
+     async ready() {
+@@ -314,6 +314,7 @@ module.exports = (options, ctx) => {
+       }
+ 
+       themeConfig.sidebar = sidebar;
++      console.log(nav, sidebar)
+       return {nav, sidebar};
+     }
+   }
