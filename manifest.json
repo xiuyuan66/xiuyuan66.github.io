@@ -1,0 +1,20 @@
+{
+    "name": "xiuyuan Note",
+    "short_name": "xiuyuan Note",
+    "icons": [
+      {
+        "src": "/images/icon.jpg",
+        "sizes": "192x192",
+        "type": "image/jpg"
+      },
+      {
+        "src": "/images/icon.jpg",
+        "sizes": "512x512",
+        "type": "image/jpg"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#0084ff"
+  }
