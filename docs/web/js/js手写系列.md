@@ -191,7 +191,7 @@ function debounce(fn, delay) {
             handle(onRejected,reject)
           })
         } else if (self.status === 'fulfilled') {
-          handle(onRejected,resolve)
+          handle(onFulfilled,resolve)
         } else{// 当status === 'rejected'
           handle(onRejected,reject)
         }
